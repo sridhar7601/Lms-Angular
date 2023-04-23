@@ -1,0 +1,40 @@
+<!-- <div class="container">
+ </div> -->
+ <div style="margin-top: 6rem;">
+ <p-toast></p-toast>
+ <p-toast position="top-right" key="tl"></p-toast>
+ <p-toast position="top-center" key="tc"></p-toast>
+ <p-toast position="bottom-center" key="bc"></p-toast>
+
+ <p-toast position="bottom-right" key="c" (onClose)="onReject()" [baseZIndex]="5000">
+     <ng-template let-message pTemplate="message">
+         <div class="p-flex p-flex-column" style="flex: 1">
+             <div class="p-text-center">
+                 <i class="pi pi-exclamation-triangle" style="font-size: 3rem"></i>
+                 <h4>{{message.summary}}</h4>
+                 <p>{{message.detail}}</p>
+             </div>
+             <div class="p-grid p-fluid">
+                 <div class="p-col-6">
+                     <button type="button" pButton (click)="onConfirm()" label="Yes" class="p-button-success"></button>
+                 </div>
+                 <div class="p-col-6">
+                     <button type="button" pButton (click)="onReject()" label="No" class="p-button-secondary"></button>
+                 </div>
+             </div>
+         </div>
+     </ng-template>
+ </p-toast>
+</div>
+<div class="card">
+  <p-splitter [style]="{ height: '300px' }"  styleClass="mb-5">
+      <ng-template pTemplate >
+        <div class="question"><strong>First do enter p tag <br>
+        then enter helloworld in it !</strong></div>
+          </ng-template>
+      <ng-template pTemplate>
+        <iframe src="http://localhost:8099/" width="98%"
+        style="border-radius: 1em;" height="600vh" (load)="onIframeLoad()"></iframe>
+          </ng-template>
+  </p-splitter>
+</div>

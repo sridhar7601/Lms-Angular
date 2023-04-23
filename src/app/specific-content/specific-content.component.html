@@ -1,0 +1,84 @@
+
+
+        <div *ngIf="isCodeCorrect">
+
+<div class="p">
+
+  <!-- <div *ngFor="let topic of topics">
+    <h1>{{ topic.title }}</h1>
+    <div *ngIf="textResources[topic.title]">
+      <h2>Text Resources</h2>
+      <ul>
+        <li *ngFor="let resource of textResources[topic.title]">{{ resource.url }}</li>
+      </ul>
+    </div>
+    <div *ngIf="videoResources[topic.title]">
+      <h2>Video Resources</h2>
+      <ul>
+        <li *ngFor="let resource of videoResources[topic.title]">
+          <div class="programiz-youtube-wrapper lite-youtube">
+            <h3>{{ resource.url }}</h3>
+            <div class="programiz-youtube__container">
+              <iframe
+                [src]="resource.url"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>(click)="more(topic.title,topic.id) -->
+
+  <div *ngFor="let topic of topics">
+    <h1>{{ topic.title }}</h1>
+    <div *ngFor="let resource of topic.resources">
+      <div *ngIf="resource.type === 'text'">
+
+        <p>{{ resource.url }}</p>
+
+        <!-- <button class="btn btn-primary"  [value]="(topic.id || 0).toString()" [ngClass]="{'disabled': isLoading}" (click)="more(topic.title,topic.id,$event)">
+          <span >
+          <span *ngIf="!isLoading" id="{{topic.id}}" >I want more content</span>
+          <span *ngIf="isLoading">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </span>
+        </span>
+        </button> -->
+      <!-- <div *ngIf="topic.id ==morecontent[1] " >
+        <p class="more">{{morecontent}}</p>
+      </div> -->
+      </div>
+      <div *ngIf="resource.type === 'iframe'">
+        <iframe class="ifram" width="560" height="315" [src]="getIframeUrl(resource.url)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div *ngIf="resource.type === 'video'">
+        <iframe width="560" height="315" [src]="getVideoUrl(resource.url)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- <div class=type-text>
+    <h1 class="heading">Heading</h1>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque, a ex voluptatem, non
+      recusandae repellat ratione velit consectetur deserunt at! Perspiciatis quos culpa facere, consequatur quas ullam
+      ducimus sequi?</p>
+  </div>
+  <div class="typevideo">
+    <div class="youtube-video">
+      <div class="youtube-video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/B7G5B8P8k9s?list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+  </div> -->
+
+</div>

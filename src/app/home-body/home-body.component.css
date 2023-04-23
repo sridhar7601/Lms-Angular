@@ -1,0 +1,112 @@
+p{
+  font-family: 'Plus Jakarta Sans';}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.topconntainer{
+display: flex;
+background-color: #f9fafc;
+margin-bottom: 2rem
+;
+}
+.top{
+  margin-top: 9rem;
+}
+.center{
+  display: flex;
+}
+.centercont{
+  padding: 1rem 3rem
+}
+.center{
+  background-color:#40826d;
+  padding: 25px 0px;
+}
+
+/* .text {
+  animation: fade-in 1s ease-in-out;
+  opacity: 0;
+} */
+
+/* @keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+.cardswithcourse{
+  /* margin-left: 200px; */
+  display: flex;
+}
+.bodytext{
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+  /* padding: 10rem 10rem; */
+  margin-top: 15rem;
+  font-family: 'Plus Jakarta Sans';    /* margin-right: 0rem; */
+    margin-left: 1rem;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cardarea{
+  padding: 1rem 3rem;
+
+}
+.col-md-3{
+  width: 33%;
+}
+.btn:hover {
+  color: inherit;
+  background-color: transparent;
+  border-color: inherit;
+}
+.card {
+  margin: 10px;
+  background-color: #1f1d1d;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+}
+
+.card:hover {
+  background-color: #ebebeb;
+}
+
+.btn{
+  cursor: pointer;
+    margin: 3px;
+}
+.card-body{
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+}
+.platform__icon {
+  margin-right: 10px;
+}
+
+.card-wrapper {
+  flex-basis: 33%;
+  max-width: 300px;
+}
+
+h3 {
+  margin: 0;
+}

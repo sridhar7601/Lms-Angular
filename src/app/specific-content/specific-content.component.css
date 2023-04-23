@@ -1,0 +1,28 @@
+.p{
+  margin-top: 6rem;
+  position: absolute;
+  left: 20rem;
+  color:#40826d;
+}
+.heading{
+  line-height: 54px;
+  margin-bottom: 20px;
+}
+.paragraph{
+  line-height: 30px;
+  /* color: rgba(37,38,94,.7); */
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+    /* margin-bottom: 16px; */
+}
+.ifram{
+  width: 45rem;
+    height: 30rem;
+    border-radius: 1em;
+    box-shadow: 0 11px 12px rgb(38 33 33 / 20%);
+}
+

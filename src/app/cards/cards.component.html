@@ -1,0 +1,26 @@
+<!-- <div class="row">
+  <div class="card">
+      <h4>What is a Frontend Develoment?</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam porro similique aliquid debitis ipsam soluta dolorum ipsa! Voluptate, suscipit iure.</p>
+  </div>
+</div> -->
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+    <div class="ag-courses_item"*ngFor="let items of contents" routerLink="courseBody/{{items.id}}">
+      <a style="text-decoration: none;" class="ag-courses-item_link">
+        <div  class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          {{items.name}}
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          Start:
+          <span class="ag-courses-item_date">
+            04.11.2022
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

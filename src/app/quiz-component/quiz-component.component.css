@@ -1,0 +1,22 @@
+.container {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.correct-container, .wrong-container {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-bottom: 20px;
+}

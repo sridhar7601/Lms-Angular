@@ -1,0 +1,31 @@
+<div class="boo">
+  <div class="listbody">
+
+<ngb-accordion [closeOthers]="true" class="my-accordion">
+  <ngb-panel *ngFor="let weeks of week; let i = index ;" title="Week{{i+1}}" id="static-{{weeks.id}}" [disabled]="i > 1 && !isUnlocked">
+		<ng-template ngbPanelContent>
+      <div class="list-group">
+        <button type="button" style="background-color: #40826d;" (click)="onButtonClick(weeks.id)" class="list-group-item list-group-item-actio">
+          {{weeks.title}}
+        </button>
+      </div>
+		</ng-template>
+	</ngb-panel>
+
+</ngb-accordion>
+<div class="Editor">
+
+  <p-sidebar [(visible)]="sidebarVisible1" position="left" class="custom-sidebar">
+    <ng-template pTemplate>
+      <app-stackblitz></app-stackblitz>
+    </ng-template>
+  </p-sidebar>
+
+  <button pButton type="button" class="p-button-rounded p-button-success" (click)="sidebarVisible1 = true">
+    <i class="pi pi-arrow-right"></i> Editor
+  </button>
+  </div>
+</div>
+  <app-specific-content #specificContent></app-specific-content>
+
+</div>

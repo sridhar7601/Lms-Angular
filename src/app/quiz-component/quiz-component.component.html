@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="options-container"
+        (dragover)="onDragOver($event)"
+        (drop)="onDrop($event, 'correct')">
+        <p>Function:</p><br>
+        <div class="option"
+          *ngFor="let option of selectedOptions.correct"
+          draggable="true"
+          (dragstart)="onDragStart($event, option)">
+          {{ option }}
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="options-container"
+        (dragover)="onDragOver($event)"
+        (drop)="onDrop($event, 'incorrect')">
+        <p>Class options:  </p>
+        <div class="option"
+          *ngFor="let option of selectedOptions.incorrect"
+          draggable="true"
+          (dragstart)="onDragStart($event, option)">
+          {{ option }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col">
+      <h2 class="text-center">{{ question }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="options">
+        <p>Drag the options to the correct container:</p>
+        <div class="option"
+          *ngFor="let option of options"
+          draggable="true"
+          (dragstart)="onDragStart($event, option)"
+          (dblclick)="removeOption(option)">
+          {{ option }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col text-center">
+      <button class="btn btn-primary" (click)="checkAnswers()">Check Answers</button>
+    </div>
+  </div>
+</div>

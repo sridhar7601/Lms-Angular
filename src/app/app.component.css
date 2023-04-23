@@ -1,0 +1,20 @@
+body {
+  font-family: "euclid_circular_a","Arial","Source Sans Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+p-menubar {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 9999;
+  font-family: "euclid_circular_a","Arial","Source Sans Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.main-content {
+  padding-top: 50px; /* Adjust the value to match the height of your navbar */
+}

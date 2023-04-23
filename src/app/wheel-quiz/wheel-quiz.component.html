@@ -1,0 +1,16 @@
+<h2>Quiz {{ quizIndex }}</h2>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-text">{{ quiz.question }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"
+      *ngFor="let option of quiz.options"
+      [ngClass]="{'bg-success': isAnsweredCorrectly(option)}">
+      {{ option }}
+    </li>
+  </ul>
+</div>
+
+<a class="btn btn-primary" [routerLink]="['/spin']">Spin Again</a>

@@ -1,0 +1,20 @@
+.listbody{
+  margin-top: 6rem;
+  width: 18rem;
+  padding: 10px 0px 0px 50px;
+}.boo{
+  display: -webkit-inline-box;
+}
+.btn btn-primary{
+  background-color: #40826d !important;
+}
+.Editor{
+  margin-top: 20px;
+}
+
+.p-sidebar-left {
+  top: 4.6rem;
+  left: 0;
+  width: 74rem;
+  height: 100%;
+}

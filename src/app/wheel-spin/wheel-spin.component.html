@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-6">
+    <p>Spin the wheel to select a question:</p>
+    <canvas #canvas width="300" height="300"></canvas>
+    <button class="btn btn-primary mt-3" (click)="spin()">Spin the wheel</button>
+  </div>
+  <div class="col-md-6">
+    <p>Answer the following question:</p>
+    <div *ngIf="currentQuestion">
+      <p>{{ currentQuestion.question }}</p>
+      <div class="form-check" *ngFor="let option of currentQuestion.options; let i = index">
+        <input class="form-check-input" type="radio" name="quiz-option" id="quiz-option-{{ i }}" [value]="i">
+        <label class="form-check-label" for="quiz-option-{{ i }}">{{ option }}</label>
+      </div>
+      <button class="btn btn-primary mt-3" (click)="submitAnswer()">Submit</button>
+    </div>
+  </div>
+</div>

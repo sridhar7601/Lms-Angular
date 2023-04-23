@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+.p-menubar {
+  padding: auto;
+  position: fixed;
+  color: burlywood !important;
+  top: 0;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 9999;
+  font-family: 'Plus Jakarta Sans';
+}
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+  font-family: 'Plus Jakarta Sans';
+  color: #41A541 !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+
+}
+.p-sidebar-left {
+  top: 4.6rem !important;
+  left: 0 !important;
+  width: 74rem !important;
+  height: 100% !important;
+}
+.p-splitter-panel p-splitter-panel-nested{
+  flex-basis: calc(18% - 4px) !important;
+}
