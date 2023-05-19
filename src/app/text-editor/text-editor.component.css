@@ -1,0 +1,27 @@
+#editor {
+  width: 500px;
+  height: 300px;
+}
+.body{
+  margin-top: 6rem;
+}
+#event-log {
+  width: 500px;
+  height: 150px;
+}
+
+#progress-bar {
+  width: 500px;
+  height: 20px;
+  background-color: #ddd;
+  position: relative;
+  cursor: pointer;
+}
+
+#progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #4CAF50;
+}

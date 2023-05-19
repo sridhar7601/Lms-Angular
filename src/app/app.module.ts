@@ -29,6 +29,9 @@ import { SplitterModule } from 'primeng/splitter';
 import {ToastModule} from 'primeng/toast';
 import { GitComponent } from './git/git.component';
 import { ClipboardModule } from 'ngx-clipboard';
+import { TextEditorComponent } from './text-editor/text-editor.component';
+import { TestadminjsonComponent } from './testadminjson/testadminjson.component';
+import { MonacotestComponent } from './monacotest/monacotest.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,7 @@ import { ClipboardModule } from 'ngx-clipboard';
     StackblitzComponent,
     EventsComponent, WheelQuizComponent,
      MarkdownEditorComponent,
-     CardsComponent,GitComponent
+     CardsComponent,GitComponent, TextEditorComponent, TestadminjsonComponent, MonacotestComponent
 
   ],
   imports: [

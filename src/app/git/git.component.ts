@@ -18,7 +18,7 @@ export class GitComponent {
     this.preview = document.getElementById('preview') as HTMLDivElement;
 
     // Get text from another API and set it as the value of the editor textarea
-    const apiUrl = 'http://localhost:3000/markdown/6';
+    const apiUrl = 'http://localhost:3000/markdown/1';
     this.http.get(apiUrl).subscribe((response:any) => {
       if (this.editor) {
         console.log(response.markdown_text, '25')
@@ -34,7 +34,7 @@ export class GitComponent {
     if (this.preview && this.editor) {
       const request = new XMLHttpRequest();
       const url = 'https://api.github.com/markdown/raw';
-      const accessToken = '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';
+      const accessToken = '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';
       request.open('POST', url, true);
       request.setRequestHeader('Content-Type', 'text/plain;charset=UTF-8');
       request.setRequestHeader('Authorization', 'token ' + accessToken);

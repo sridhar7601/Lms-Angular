@@ -1,0 +1,11 @@
+
+
+<div class="body">
+  <div id="progress-bar" (click)="togglePause()">
+    <div class="progress" [style.width.%]="progressPercent"></div>
+  </div>
+  <textarea id="event-log" [(ngModel)]="eventLog"></textarea>
+  <button (click)="pause()">Pause</button>
+  <button (click)="play()">Play</button>
+
+</div>

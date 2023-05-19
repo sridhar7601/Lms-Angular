@@ -1,0 +1,8 @@
+<p>testadminjson works!</p>
+<!-- <textarea [(ngModel)]="inputText" (input)="convertToEvents()"></textarea> -->
+<textarea [(ngModel)]="inputText" (input)="convertToEvents()"></textarea>
+
+<div *ngIf="events.length > 0">
+  <p>Result:</p>
+  <pre>{{ events | json }}</pre>
+</div>

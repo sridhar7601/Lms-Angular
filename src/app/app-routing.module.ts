@@ -7,6 +7,7 @@ import { EventsComponent } from './events/events.component';
 import { WheelSpinComponent } from './wheel-spin/wheel-spin.component';
 import { ScratchCardComponent } from './scratch-card/scratch-card.component';
 import { GitComponent } from './git/git.component';
+import { TextEditorComponent } from './text-editor/text-editor.component';
 
 const routes: Routes = [{
   path:"",component:HomeBodyComponent
@@ -24,6 +25,8 @@ const routes: Routes = [{
 },{
   path:"git",component:GitComponent
 
+},{
+  path:"textedit",component:TextEditorComponent
 }
 ];
 
