@@ -34,7 +34,7 @@ export class GitComponent {
     if (this.preview && this.editor) {
       const request = new XMLHttpRequest();
       const url = 'https://api.github.com/markdown/raw';
-      const accessToken = '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';
+      const accessToken = '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';
       request.open('POST', url, true);
       request.setRequestHeader('Content-Type', 'text/plain;charset=UTF-8');
       request.setRequestHeader('Authorization', 'token ' + accessToken);

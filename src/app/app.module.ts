@@ -32,6 +32,7 @@ import { ClipboardModule } from 'ngx-clipboard';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { TestadminjsonComponent } from './testadminjson/testadminjson.component';
 import { MonacotestComponent } from './monacotest/monacotest.component';
+import { HtmlcomplierComponent } from './htmlcomplier/htmlcomplier.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { MonacotestComponent } from './monacotest/monacotest.component';
     StackblitzComponent,
     EventsComponent, WheelQuizComponent,
      MarkdownEditorComponent,
-     CardsComponent,GitComponent, TextEditorComponent, TestadminjsonComponent, MonacotestComponent
+     CardsComponent,GitComponent, TextEditorComponent, TestadminjsonComponent, MonacotestComponent, HtmlcomplierComponent
 
   ],
   imports: [
