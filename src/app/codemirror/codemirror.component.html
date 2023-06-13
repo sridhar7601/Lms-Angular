@@ -1,0 +1,15 @@
+<div>
+  <ngx-codemirror
+    [(ngModel)]="jsxCode"
+    [options]="{
+      lineNumbers: true,
+      mode: 'jsx',
+      theme: 'default'
+    }"
+    (ngModelChange)="onCodeChange($event)"
+  ></ngx-codemirror>
+
+  <button (click)="compileCode()">Compile</button>
+
+  <pre>{{ compiledCode }}</pre>
+</div>

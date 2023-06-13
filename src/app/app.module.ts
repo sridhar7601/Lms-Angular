@@ -33,6 +33,7 @@ import { TextEditorComponent } from './text-editor/text-editor.component';
 import { TestadminjsonComponent } from './testadminjson/testadminjson.component';
 import { MonacotestComponent } from './monacotest/monacotest.component';
 import { HtmlcomplierComponent } from './htmlcomplier/htmlcomplier.component';
+import { CodemirrorComponent } from './codemirror/codemirror.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { HtmlcomplierComponent } from './htmlcomplier/htmlcomplier.component';
     StackblitzComponent,
     EventsComponent, WheelQuizComponent,
      MarkdownEditorComponent,
-     CardsComponent,GitComponent, TextEditorComponent, TestadminjsonComponent, MonacotestComponent, HtmlcomplierComponent
+     CardsComponent,GitComponent, TextEditorComponent, TestadminjsonComponent, MonacotestComponent, HtmlcomplierComponent, CodemirrorComponent
 
   ],
   imports: [
